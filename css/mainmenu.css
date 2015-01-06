@@ -1,0 +1,135 @@
+#mainmenu{
+	clear:both;
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: auto;
+
+	 
+	 //Gradient background color
+ 	 background: rgb(181,168,148); /* Old browsers */
+	 background: -moz-linear-gradient(top,  rgba(181,168,148,1) 0%, rgba(181,168,148,1) 0%, rgba(181,168,148,1) 1%, rgba(219,213,204,1) 5%, rgba(230,226,219,1) 11%, rgba(181,168,148,1) 71%, rgba(181,168,148,1) 100%, rgba(120,111,101,1) 100%, rgba(181,168,148,1) 101%); /* FF3.6+ */
+	 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,168,148,1)), color-stop(0%,rgba(181,168,148,1)), color-stop(1%,rgba(181,168,148,1)), color-stop(5%,rgba(219,213,204,1)), color-stop(11%,rgba(230,226,219,1)), color-stop(71%,rgba(181,168,148,1)), color-stop(100%,rgba(181,168,148,1)), color-stop(100%,rgba(120,111,101,1)), color-stop(101%,rgba(181,168,148,1))); /* Chrome,Safari4+ */
+	 background: -webkit-linear-gradient(top,  rgba(181,168,148,1) 0%,rgba(181,168,148,1) 0%,rgba(181,168,148,1) 1%,rgba(219,213,204,1) 5%,rgba(230,226,219,1) 11%,rgba(181,168,148,1) 71%,rgba(181,168,148,1) 100%,rgba(120,111,101,1) 100%,rgba(181,168,148,1) 101%); /* Chrome10+,Safari5.1+ */
+	 background: -o-linear-gradient(top,  rgba(181,168,148,1) 0%,rgba(181,168,148,1) 0%,rgba(181,168,148,1) 1%,rgba(219,213,204,1) 5%,rgba(230,226,219,1) 11%,rgba(181,168,148,1) 71%,rgba(181,168,148,1) 100%,rgba(120,111,101,1) 100%,rgba(181,168,148,1) 101%); /* Opera 11.10+ */
+	 background: -ms-linear-gradient(top,  rgba(181,168,148,1) 0%,rgba(181,168,148,1) 0%,rgba(181,168,148,1) 1%,rgba(219,213,204,1) 5%,rgba(230,226,219,1) 11%,rgba(181,168,148,1) 71%,rgba(181,168,148,1) 100%,rgba(120,111,101,1) 100%,rgba(181,168,148,1) 101%); /* IE10+ */
+	 background: linear-gradient(to bottom,  rgba(181,168,148,1) 0%,rgba(181,168,148,1) 0%,rgba(181,168,148,1) 1%,rgba(219,213,204,1) 5%,rgba(230,226,219,1) 11%,rgba(181,168,148,1) 71%,rgba(181,168,148,1) 100%,rgba(120,111,101,1) 100%,rgba(181,168,148,1) 101%); /* W3C */
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5a894', endColorstr='#b5a894',GradientType=0 ); /* IE6-9 */	 
+}
+
+#mainmenu ul{
+	 float:left;
+	 width:100%;
+	 padding:0;
+	 margin:0;
+	 list-style-type:none;
+	 display:inline-block;
+	 text-align:center;
+	 border-bottom: 2px solid #464646;
+	 border-top:none;
+
+}
+
+#mainmenu ul li{
+	display:inline-block;
+//	padding: 0.3em;
+	margin:auto;
+//	color: #6b0c02;
+	color: #2F2D34;
+	//border-right: 1px solid #464646;
+}
+
+#mainmenu ul li:last-of-type{
+	border-right: none;
+}
+
+#mainmenu ul li a {
+	 display: inline-block;
+	 text-decoration: none;
+     font-size: 1em;
+	 font-weight: bold;
+	 padding-top: 0.5em;
+	 padding-bottom: 0.5em;	 
+	 padding-right: 0.3em;
+	 padding-left: 0.3em;
+	 //color: #6b0c02;
+	 color: #2F2D34;	 
+	 background: rgba(255, 255, 255, 0);
+	 border: 0;
+}
+
+#mainmenu ul li a.here:link {
+	 display: inline-block;
+	 text-decoration: none;
+     font-size: 1em;
+	 font-weight: bold;
+	 padding-right: 0.3em;
+	 padding-left: 0.3em;
+	 color: white;
+	 background: #2F2D34;
+	 border: 0;
+}
+
+#mainmenu a:hover{
+//	text-shadow: 1px 1px 1px #999;
+	background: #615B68;
+	color: white;
+}
+
+#mainmenu img{
+	vertical-align: bottom;
+	padding-right: 0.2em;
+}
+
+a.menu-link {
+  	    float: right;
+		    display: block;
+		    padding: 0.5em;
+			font-weight: bold;
+		}
+		nav[role=navigation] {
+			clear: both;
+			-webkit-transition: all 0.3s ease-out;  
+			-moz-transition: all 0.3s ease-out;
+			-ms-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+		}
+		.js nav[role=navigation] {
+			overflow: hidden;
+			max-height: 0;
+		}
+		nav[role=navigation].active {
+			max-height: 15em;
+		}
+		nav[role=navigation] ul {
+			margin: 0;
+			padding: 0;
+			border-top: 1px solid #808080;
+		}
+		nav[role=navigation] li a {
+			display: block;
+			//padding: 0.8em;
+			border-bottom: 1px solid #808080;
+		}
+		
+		@media screen and (min-width: 48.25em) {
+			a.menu-link {
+			   display: none;
+			}
+			.js nav[role=navigation] {
+				max-height: none;
+			}
+			nav[role=navigation] ul {
+				margin: 0 0 0 -0.25em;
+				border: 0;
+			}
+			
+			nav[role=navigation]  li {
+				display: inline-block;
+				margin: 0 0.25em;
+			}
+			nav[role=navigation] li a {
+				border: 0;
+			}
+		}

@@ -1,0 +1,54 @@
+CREATE DATABASE  IF NOT EXISTS `a6462472_lol` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `a6462472_lol`;
+-- MySQL dump 10.13  Distrib 5.6.13, for Win32 (x86)
+--
+-- Host: localhost    Database: lol
+-- ------------------------------------------------------
+-- Server version	5.6.14
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `s2`
+--
+
+DROP TABLE IF EXISTS `s2`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `s2` (
+  `MatchID` int(11) NOT NULL,
+  `Week` int(11) NOT NULL,
+  `Day` int(11) NOT NULL,
+  PRIMARY KEY (`MatchID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `s2`
+--
+
+LOCK TABLES `s2` WRITE;
+/*!40000 ALTER TABLE `s2` DISABLE KEYS */;
+INSERT INTO `s2` VALUES (1,1,1),(2,1,1),(3,1,1),(4,1,1),(5,1,1),(6,1,1),(7,1,2),(8,1,2),(9,1,2),(10,1,2),(11,1,2),(12,1,3),(13,1,3),(14,1,3),(15,1,3),(16,1,3),(17,2,1),(18,2,1),(19,2,1),(20,2,1),(21,2,2),(22,2,2),(23,2,2),(24,2,2),(25,3,1),(26,3,1),(27,3,1),(28,3,1),(29,3,2),(30,3,2),(31,3,2),(32,3,2),(33,4,1),(34,4,1),(35,4,1),(36,4,1),(37,4,2),(38,4,2),(39,4,2),(40,4,2),(41,5,1),(42,5,1),(43,5,1),(44,5,1),(45,5,2),(46,5,2),(47,5,2),(48,5,2),(49,6,1),(50,6,1),(51,6,1),(52,6,1),(53,6,2),(54,6,2),(55,6,2),(56,6,2),(57,7,1),(58,7,1),(59,7,1),(60,7,1),(61,7,2),(62,7,2),(63,7,2),(64,7,2),(65,8,1),(66,8,1),(67,8,1),(68,8,1),(69,8,1),(70,8,2),(71,8,2),(72,8,2),(73,8,2),(74,8,2),(75,8,2),(76,8,3),(77,8,3),(78,8,3),(79,8,3),(80,8,3),(81,9,1),(82,9,1),(83,9,1),(84,9,1),(85,9,2),(86,9,2),(87,9,2),(88,9,2),(89,10,1),(90,10,1),(91,10,1),(92,10,1),(93,10,2),(94,10,2),(95,10,2),(96,10,2),(97,11,1),(98,11,1),(99,11,1),(100,11,1),(101,11,1),(102,11,2),(103,11,2),(104,11,2),(105,11,2),(106,11,2),(107,11,2),(108,11,3),(109,11,3),(110,11,3),(111,11,3),(112,11,3);
+/*!40000 ALTER TABLE `s2` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-04-10 13:29:10
